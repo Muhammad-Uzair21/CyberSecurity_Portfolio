@@ -82,7 +82,7 @@ cybersecurity-portfolio/
 
 ## 📬 Connect with Me
 
-* **[LinkedIn:](https://www.linkedin.com/in/muhammad-uzair-j21/)**
+* **[LinkedIn](https://www.linkedin.com/in/muhammad-uzair-j21/)**
 * **Email: uzair.jay@gmail.com**
 
 ---
