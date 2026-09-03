@@ -1,46 +1,55 @@
-# NIST SP 800-30 Vulnerability Assessment
+# Incident Response & Network Traffic Analysis
 
 ## Executive Summary
-This project outlines a risk assessment for a database server environment following the NIST SP 800-30 Rev. 1 guidelines[cite: 7]. The assessment evaluates server assets, system vulnerabilities, threat sources, and business operational risks over a three-month evaluation period (June 2026 to August 2026) to protect sensitive data and support business continuity[cite: 7].
+This folder aggregates incident handler journals, packet captures, and triage activities completed as part of the Google Cybersecurity Certificate. Scenarios cover phishing investigations, malware hash analysis, DDoS mitigation using the NIST Cybersecurity Framework (CSF), and DNS/HTTP packet analysis via CLI log inspection.
 
 ---
 
-## 🛠️ System Description & Scope
-* **Hardware & OS:** High-performance Linux server hardware with 128GB RAM running the latest Linux distribution[cite: 7].
-* **Database & Connectivity:** Hosted MySQL database management system with IPv4 network binding and SSL/TLS network encryption[cite: 7].
-* **Scope:** Database server access controls and system infrastructure assessed under NIST SP 800-30 Rev. 1 guidelines[cite: 7].
-* **Business Purpose:** Safeguard sensitive customer and organizational records against leaks, unauthorized modifications, or breaches that could trigger business operational disruption, financial impact, or reputational damage[cite: 7].
+## 🛠️ Tools & Frameworks Used
+* **Frameworks:** NIST Cybersecurity Framework (Identify, Protect, Detect, Respond, Recover)
+* **Traffic & Log Analysis Tools:** `tcpdump`, `Wireshark`, Linux CLI
+* **Threat Intelligence & SIEM:** `VirusTotal`, SIEM Alert Logs, Incident Escalation Ticketing Systems
 
 ---
 
-## 🔍 Risk Assessment (NIST SP 800-30 Rev. 1)
+## 🔍 Incident Summaries & Handlers' Journals
 
-| Threat Source | Threat Event | Likelihood (1-3) | Severity (1-3) | Risk Score |
-| :--- | :--- | :---: | :---: | :---: |
-| **Competitors** | Exfiltrate and obtain sensitive information[cite: 7] | 1 | 3 | **3**[cite: 7] |
-| **Disgruntled Employee** | Sell sensitive information for personal gain[cite: 7] | 1 | 3 | **3**[cite: 7] |
-| **Malicious Hackers** | Exploit vulnerabilities to access database assets and customer data[cite: 7] | 2 | 3 | **6**[cite: 7] |
+### 1. Phishing & Malware Escalation Triage
+* **Scenario:** Investigation of a suspicious email containing a malicious attachment executable (`bfsvc.exe`).
+* **Analysis:** Extracted the file payload's SHA-256 hash (`54e6ea...7f6b`) and cross-referenced threat intelligence using VirusTotal to verify malicious indicators.
+* **Action:** Generated an L2 SOC escalation ticket detailing the IOCs (Indicators of Compromise) and initiated quarantine procedures.
 
----
+### 2. Healthcare Ransomware Analysis
+* **Scenario:** Reviewed a ransomware outbreak impacting healthcare system availability via email-based initial access.
+* **Analysis:** Documented incident handler notes evaluating how unpatched endpoint software and lack of network segmentation accelerated payload propagation.
+* **Action:** Formulated recovery strategies prioritizing offline backup validation and domain credential resets.
 
-## 🛠️ Recommended Remediation Strategy
+### 3. DDoS Incident Mitigation (NIST CSF)
+* **Scenario:** High-volume ICMP flood attack targeting internal web server infrastructure, disrupting normal network availability.
+* **Application of NIST CSF:**
+  * **Identify:** Flagged degraded network performance and mapped critical target assets.
+  * **Protect:** Implemented firewall rate-limiting policies and strict ICMP packet filtering rules.
+  * **Detect:** Configured IDS/IPS alert triggers for anomalous traffic spikes.
+  * **Respond:** Isolated target segments and initiated traffic scrubbing protocols.
+  * **Recover:** Verified normal traffic flow, restored service availability, and documented post-incident lessons learned.
 
-* **Authentication & Access Control:**
-  * Implement robust Authentication, Authorization, and Auditing (AAA) mechanisms[cite: 7].
-  * Enforce strict password requirements, Role-Based Access Control (RBAC), and Multi-Factor Authentication (MFA)[cite: 7].
-* **Data Transit Security:**
-  * Standardize on TLS encryption for data in transit and phase out obsolete SSL protocols[cite: 7].
-* **Network Segmentation & Filtering:**
-  * Restrict database access through corporate IP allow-listing to prevent unauthorized external connections from the public internet[cite: 7].
+### 4. DNS & Malicious Web Redirection Analysis
+* **Scenario:** Investigated user reports regarding unreachable external domains and unexpected browser redirects.
+* **Traffic Analysis:**
+  * Analyzed network logs revealing DNS lookup failures on **UDP Port 53** (Destination Unreachable).
+  * Inspected packet traces via `tcpdump` to trace unauthorized URL redirection streams targeting `greatrecipesforme.com` caused by compromised admin credentials.
+* **Action:** Restored DNS resolution settings, revoked compromised credentials, and implemented strict egress firewall filtering.
 
 ---
 
 ## 📄 Artifacts Included
-* `Vulnerability_assessment_report.pdf` – Original NIST SP 800-30 Rev. 1 risk assessment report[cite: 7].
+* `Incident_handler's_journal_Phishing.pdf`
+* `Incident_handler's_journal_DDoS.pdf`
+* `Incident_handler's_journal_DNS.pdf`
 
 ---
 
 ## 💡 Key Takeaways
-* Applied NIST SP 800-30 Rev. 1 methodologies to calculate threat likelihood, severity, and risk scores[cite: 7].
-* Balanced security enforcement against operational business needs[cite: 7].
-* Selected defensive controls (TLS, MFA, RBAC, IP allow-listing) to protect backend database assets[cite: 7].
+* Applied the NIST Cybersecurity Framework stages to contain and recover from active network attacks.
+* Developed skills in extracting threat intelligence (IOCs, hashes) to triage phishing and malware threats.
+* Used command-line traffic tools (`tcpdump`) to isolate network protocol failures and malicious redirects.
