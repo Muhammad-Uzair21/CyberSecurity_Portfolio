@@ -21,8 +21,6 @@ The projects included here reflect practical scenarios and frameworks completed 
 
 cybersecurity-portfolio/
 ├── README.md
-├── assets/
-│   └── images/
 ├── 01-virtual-internship/
 │   ├── README.md
 │   ├── task-2-networking-recon/
