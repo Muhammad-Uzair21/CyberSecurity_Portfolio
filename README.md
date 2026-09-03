@@ -10,13 +10,14 @@ The projects included here reflect practical scenarios and frameworks completed 
 
 * **Network Analysis & Recon:** `Wireshark`, `tcpdump`, `Nmap`, Port Scanning, Packet Capture Analysis (`.pcapng`), ICMP/DNS/HTTP Protocols[cite: 2, 5, 6, 8]
 * **Web Security & Pentesting:** `Burp Suite` (Proxy, Intruder, Repeater), `OWASP ZAP`, `Nikto`, SQL Injection (SQLi), Cross-Site Scripting (XSS), Command Injection, LFI, CSRF, Broken Access Control[cite: 1, 3]
-* **Security Frameworks & Standards:** NIST CSF, NIST SP 800-30 Rev. 1, PASTA Threat Modeling, PCI-DSS, OWASP Top 10, MITRE ATT&CK, CVE/CVSS[cite: 1, 2, 4, 7, 9]
+* **Security Frameworks & Standards:** NIST CSF, NIST SP 800-30 Rev. 1, PASTA Threat Modeling, PCI-DSS, OWASP Top 10, `MITRE ATT&CK`, CVE/CVSS[cite: 1, 2, 4, 7, 9]
 * **Incident Response & SIEM:** Log Analysis, Phishing Escalations, Malware Triage (`VirusTotal`), DDoS Mitigation, SIEM/IDS Alerting[cite: 5, 9, 10]
 * **Operating Systems & Environments:** Linux CLI, MySQL Database Administration, Virtual Lab Environments (DVWA, OWASP Juice Shop)[cite: 1, 3, 7]
 
 ---
 
 ## 📁 Repository Structure
+```text
 
 cybersecurity-portfolio/
 ├── README.md
@@ -33,6 +34,7 @@ cybersecurity-portfolio/
     ├── vulnerability-assessments/
     └── incident-response/
 
+```
 ---
 
 ## 🚀 Projects Overview
