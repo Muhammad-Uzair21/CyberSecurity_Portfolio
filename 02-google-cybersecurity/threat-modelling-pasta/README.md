@@ -44,7 +44,7 @@ This project applies the Process for Attack Simulation and Threat Analysis (PAST
 ---
 
 ## 📄 Artifacts Included
-* `PASTA_worksheet.pdf` – Completed PASTA threat modeling worksheet[cite: 4].
+* `Threat-modelling-PASTA.pdf` – Completed PASTA threat modeling worksheet[cite: 4].
 
 ---
 
