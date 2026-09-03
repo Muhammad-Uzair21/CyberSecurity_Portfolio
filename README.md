@@ -1,8 +1,3 @@
-# Repository Description (Max 350 Characters)
-Hands-on Cybersecurity Portfolio featuring technical labs, vulnerability assessments, web application pentesting, incident response, network packet analysis, and threat modeling. Highlights projects from a Virtual Cybersecurity Internship and the Google Cybersecurity Professional Certificate.
-
----
-
 # Cybersecurity Portfolio
 
 Welcome to my cybersecurity portfolio! This repository showcases hands-on experience in **vulnerability assessments**, **web application penetration testing**, **network traffic analysis**, **incident response**, and **threat modeling**. 
