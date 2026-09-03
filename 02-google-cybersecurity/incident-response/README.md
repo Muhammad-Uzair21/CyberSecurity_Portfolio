@@ -43,9 +43,10 @@ This folder aggregates incident handler journals, packet captures, and triage ac
 ---
 
 ## 📄 Artifacts Included
-* `Incident_handler's_journal_Phishing.pdf`
-* `Incident_handler's_journal_DDoS.pdf`
-* `Incident_handler's_journal_DNS.pdf`
+* `Incident_handler's_journal.pdf`
+* `Incident_analysis_Network.pdf`
+* `Incident_response_DDoS.pdf`
+* `Incident_report_Phising.pdf`
 
 ---
 
