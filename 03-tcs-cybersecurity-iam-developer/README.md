@@ -46,7 +46,11 @@ I assessed the existing IAM strategy across:
 
 **Outcome:** Identified key IAM requirements, risks, and areas for improvement.
 
-📄 [View IAM Readiness Assessment](./01-assess/iam-readiness-assessment.pdf)
+#### 📝 IAM Readiness Assessment
+
+Completed an email-based IAM readiness assessment covering lifecycle management, access control, governance, system integration, cloud integration, and user experience.
+
+[Explore Assessment →](./01-assess/)
 
 ---
 
