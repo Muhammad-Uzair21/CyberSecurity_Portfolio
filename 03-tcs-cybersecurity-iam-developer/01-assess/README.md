@@ -218,9 +218,7 @@ This progression was important because the solution was not designed in isolatio
 
 **Task 1 — IAM Readiness Assessment**
 
-The original submission was an email-based readiness assessment and recommendation prepared for the TechCorp IAM engagement.
-
-📄 [`iam-readiness-assessment.pdf`](./iam-readiness-assessment.pdf)
+An email-based readiness assessment and recommendation submitted as part of the simulation.
 
 ---
 
