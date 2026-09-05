@@ -12,8 +12,9 @@ This project was completed as part of the **Tata Consultancy Services (TCS) Cybe
 
 Completed the **TCS Cybersecurity IAM Developer Virtual Job Simulation** on Forage.
 
-[View Certificate](./03-tcs-cybersecurity-iam/certificate/TCS-Cybersecurity-IAM-Developer-Certificate.pdf)
-[Verify on Forage ->](https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_6a5dff92ff6af99de17a4adc_1788606690524_completion_certificate.pdf)
+📜 [View Certificate](./03-tcs-cybersecurity-iam/certificate/TCS-Cybersecurity-IAM-Developer-Certificate.pdf)
+
+🔗 [Verify on Forage ->](https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_6a5dff92ff6af99de17a4adc_1788606690524_completion_certificate.pdf)
 
 ---
 
@@ -384,12 +385,6 @@ This case study was completed through the **Tata Consultancy Services (TCS) Cybe
 The TechCorp scenario, requirements and simulation context were provided as part of the program. The documents in this repository represent my completed deliverables and the resulting IAM analysis, solution design and implementation planning.
 
 This repository is intended as a portfolio case study demonstrating my approach to **enterprise IAM assessment, security architecture and implementation planning**.
-
----
-
-## Certificate
-
-📜 **[View Certificate](./certificate/TCS-Cybersecurity-IAM-Developer-Certificate.pdf)**
 
 ---
 
