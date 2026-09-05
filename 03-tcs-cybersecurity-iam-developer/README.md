@@ -223,10 +223,6 @@ tcs-cybersecurity-iam/
 ├── 03-implement/
 │   ├── README.md
 │   └── iam-platform-implementation-plan.pptx
-│
-└── assets/
-    ├── architecture/
-    └── diagrams/
 ```
 
 ---
